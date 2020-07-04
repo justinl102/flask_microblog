@@ -1,0 +1,84 @@
+2020-07-03 12:16:27,009 ERROR: Exception on /edit_profile [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/main/routes.py", line 82, in edit_profile
+    return redirect(url_for('main.user'), username = current_user.username )
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.user'. Did you forget to specify values ['username']?
+2020-07-03 12:20:54,374 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:23:53,106 ERROR: Exception on /auth/logout [GET] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 26, in logout
+    logout_user()
+NameError: name 'logout_user' is not defined
+2020-07-03 12:29:01,639 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:29:04,403 ERROR: Exception on /auth/login [GET] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 27, in login
+    return render_template('auth/login.html', title=_('Sign In'), form=form)
+NameError: name '_' is not defined
+2020-07-03 12:29:49,622 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:29:50,543 ERROR: Exception on /auth/login [GET] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 27, in login
+    return render_template('auth/login.html', title=_('Sign In'), form=form)
+NameError: name '_' is not defined
+2020-07-03 12:30:05,036 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]

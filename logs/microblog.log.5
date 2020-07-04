@@ -1,0 +1,92 @@
+2020-07-03 12:10:14,643 ERROR: Exception on /edit_profile [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/main/routes.py", line 82, in edit_profile
+    return redirect(url_for('user'))
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'user'. Did you mean 'main.user' instead?
+2020-07-03 12:10:37,351 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:10:44,229 ERROR: Exception on /edit_profile [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/main/routes.py", line 82, in edit_profile
+    return redirect(url_for('main.user'))
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.user'. Did you forget to specify values ['username']?
+2020-07-03 12:13:50,432 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:14:43,929 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:15:22,627 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 12:15:43,223 ERROR: Exception on /edit_profile [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/main/routes.py", line 82, in edit_profile
+    return redirect(url_for('main.user'), username = current_user.username )
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.user'. Did you forget to specify values ['username']?
+2020-07-03 12:16:21,645 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]

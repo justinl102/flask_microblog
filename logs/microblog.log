@@ -1,0 +1,89 @@
+2020-07-03 14:16:25,090 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 14:16:48,247 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTkzODA3OTg5Ljg4MjE4N30.Uo2A4mpLUZuAQgsB55tfLmyn493O7kY2gdpurU_Ywxc [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 84, in reset_password
+    user.set_password(form.password.data)
+AttributeError: 'NoneType' object has no attribute 'set_password'
+2020-07-03 14:21:45,872 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTkzODA3OTg5Ljg4MjE4N30.Uo2A4mpLUZuAQgsB55tfLmyn493O7kY2gdpurU_Ywxc [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 84, in reset_password
+    if form.validate_on_submit():
+AttributeError: 'NoneType' object has no attribute 'set_password'
+2020-07-03 14:24:17,836 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTkzODA3OTg5Ljg4MjE4N30.Uo2A4mpLUZuAQgsB55tfLmyn493O7kY2gdpurU_Ywxc [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 84, in reset_password
+    if form.validate_on_submit():
+AttributeError: 'NoneType' object has no attribute 'set_password'
+2020-07-03 14:24:24,199 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 14:24:41,122 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTkzODA4NDY4LjYzNjY0MX0.Yjjh8ObJLDgL8_HPbuunyx9dtOFwMuyMC7zpoFpKW9c [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 87, in reset_password
+    flash(_('Your password has been reset.'))
+NameError: name '_' is not defined
+2020-07-03 14:25:45,772 ERROR: Exception on /auth/reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6MywiZXhwIjoxNTkzODA4NDY4LjYzNjY0MX0.Yjjh8ObJLDgL8_HPbuunyx9dtOFwMuyMC7zpoFpKW9c [POST] [in /Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justinlabrash/Documents/flask_project/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justinlabrash/Documents/flask_project/flask_app/auth/routes.py", line 87, in reset_password
+    flash('Your password has been reset.')
+NameError: name '_' is not defined
+2020-07-03 14:25:55,604 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:75]
+2020-07-03 18:01:58,201 INFO: Microblog startup [in /Users/justinlabrash/Documents/flask_project/flask_app/__init__.py:78]
